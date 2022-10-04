@@ -1,12 +1,10 @@
 #!/usr/bin/node
-import {argv} from 'node:process'
-
-if(argv.length = 2){
-    console.log('Argument found');
+if (process.argv.length < 3) {
+  console.log('No argument');
 }
-else if(argv.length >= 3){
-    console.log('Arguments found');
+else if (process.argv.length === 3) {
+  console.log('Argument found');
 }
-else{
-    console.log('No argument');
+else {
+  console.log('Arguments found');
 }
