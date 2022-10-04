@@ -8,5 +8,5 @@ else if(argv.length >= 3){
     console.log('Arguments found');
 }
 else{
-    console.log('Argument found');
+    console.log('No argument');
 }
