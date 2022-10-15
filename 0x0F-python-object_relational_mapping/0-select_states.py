@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+Lists all states from the database.
+Usage: <mysql username> \
+       <mysql password> \
+       <database name>
+"""
 import sys
 import MySQLdb
 
