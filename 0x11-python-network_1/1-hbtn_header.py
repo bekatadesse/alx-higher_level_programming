@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-script that use the package urllib and fetches url
+script that use the package urllib and sys and fetches url
 and show body of the response
 """
 import urllib.request
