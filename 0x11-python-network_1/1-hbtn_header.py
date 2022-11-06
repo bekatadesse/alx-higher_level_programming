@@ -3,14 +3,11 @@
 -script that use the package urllib and sys.
 -fetches url and show body of the response.
 """
-import sys
 import urllib.request
+import sys
+
 
 if __name__ == "__main__":
-    try:
-        request = urllib.request.Request(sys.argv[1])
-        with urllib.request.urlopen(request) as response:
-            response = response.info()
-            print(response.get("X-Request-Id"))
-    except IndexError as e:
-        print(None)
+    with urllib.request.urlopen(sys.argv[1]) as response:
+        html = response.info()
+        print(html.get('X-Request-Id'))
