@@ -5,7 +5,6 @@
 """
 import sys
 import urllib.request
-from urllib.error import URLError
 
 if __name__ == "__main__":
     try:
@@ -13,5 +12,5 @@ if __name__ == "__main__":
         with urllib.request.urlopen(request) as response:
             response = response.info()
             print(response.get("X-Request-Id"))
-    except URLError as e:
+    except IndexError as e:
         print(None)
