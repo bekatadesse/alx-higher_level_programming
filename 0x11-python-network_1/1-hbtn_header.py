@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-script that use the package urllib and sys and fetches url
-and show body of the response
+-script that use the package urllib and sys.
+-fetches url and show body of the response
 """
 import urllib.request
 import sys
