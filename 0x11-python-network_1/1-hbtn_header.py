@@ -5,9 +5,13 @@
 """
 import sys
 import urllib.request
+from urllib.error import URLError
 
 if __name__ == "__main__":
-    request = urllib.request.Request(sys.argv[1])
-    with urllib.request.urlopen(request) as response:
-        response = response.info()
-        print(response.get("X-Request-Id"))
+    try:
+        request = urllib.request.Request(sys.argv[1])
+        with urllib.request.urlopen(request) as response:
+            response = response.info()
+            print(response.get("X-Request-Id"))
+    except URLError as e:
+        print(None)
