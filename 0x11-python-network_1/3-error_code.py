@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""
-- sends a request to the URL and urllib
+""" this script
+- sends a request to the URL and urllib, request, error
 - displays the body of the response,sys
 """
 from urllib import request, error
